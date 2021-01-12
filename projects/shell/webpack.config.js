@@ -26,9 +26,9 @@ module.exports = {
         // },        
         
         // For hosts (please adjust)
-        remotes: {
-            "mfe1": "mfe1@https://mfe1-mfo.netlify.app/remoteEntry.js",
-        },
+        // remotes: {
+        //     "mfe1": "mfe1@https://mfe1-mfo.netlify.app/remoteEntry.js",
+        // },
 
         shared: {
           "@angular/core": { singleton: true, strictVersion: true }, 
