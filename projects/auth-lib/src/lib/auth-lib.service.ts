@@ -1,0 +1,13 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthLibService {
+
+  constructor() { }
+
+  testSharedService(): boolean {
+    return true;
+  }
+}

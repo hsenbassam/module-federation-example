@@ -5,7 +5,7 @@ const path = require("path");
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, '../../tsconfig.json'),
-  [/* mapped paths to share */]);
+  ['auth-lib']);
 
 module.exports = {
   output: {
@@ -22,7 +22,7 @@ module.exports = {
         name: "mfe1",
         filename: "remoteEntry.js",
         exposes: {
-            './Module': './projects/mfe1/src/app/flights/flights.module.ts',
+            './Module': './projects/mfe1/src/app/flights/flights.module.ts'
         },        
         
         // For hosts (please adjust)

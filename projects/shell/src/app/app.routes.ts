@@ -12,11 +12,8 @@ export const APP_ROUTES: Routes = [
 
     {
       path: 'flights',
-      loadChildren: () => loadRemoteModule({
-        remoteEntry: 'https://mfe1-mfo.netlify.app/remoteEntry.js',
-        remoteName: 'mfe1',
-        exposedModule: './Module'
-      }).then(m => m.FlightsModule)
+      loadChildren: () => loadRemoteModule({ remoteName: 'mfe1', exposedModule: './Module' })
+        .then(m => m.FlightsModule)
     },
 
     {
